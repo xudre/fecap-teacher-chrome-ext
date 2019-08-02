@@ -78,7 +78,7 @@ const monitor = () => {
     if (absentList.length > 0) {
       let tmpHashId = '';
 
-      preData.push(`*${gradeTitle}*`);
+      preData.push(`${gradeTitle}`);
       preData.push(``);
 
       absentList.forEach(absent => {

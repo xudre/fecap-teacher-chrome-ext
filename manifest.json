@@ -1,6 +1,6 @@
 {
   "name": "FECAP - Professores",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Extensão para auxilio na coleta e report de informações sobre alunos ausentes.",
   "permissions": [
     "activeTab",
