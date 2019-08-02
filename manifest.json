@@ -1,0 +1,38 @@
+{
+  "name": "FECAP - Professores",
+  "version": "1.0",
+  "description": "Extensão para auxilio na coleta e report de informações sobre alunos ausentes.",
+  "permissions": [
+    "activeTab",
+    "*://intranet.fecap.br/portalcorporativo/col/sistema_chamada_on_line_rm/*"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "matches": [
+        "*://intranet.fecap.br/portalcorporativo/col/sistema_chamada_on_line_rm/*"
+      ],
+      "js": [
+        "vendors/material.min.js",
+        "scripts/inspector.js"
+      ],
+      "css": [
+        "vendors/material.icons.css",
+        "vendors/material.min.css",
+        "styles/inspector.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "vendors/material.icons.woff2",
+    "images/*",
+    "views/inspector.html"
+  ],
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "manifest_version": 2
+}
